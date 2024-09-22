@@ -45,9 +45,9 @@
   </head>
   <body class="google-font">
     <header>
-      <nav class="bg-nav-bg">
-        <div class="flex justify-between mx-auto w-11/12 p-4 h-20">
-          <button class="bg-btn-blog w-16 rounded-md">Blog</button>
+      <nav class="bg-nav-bg max-sm:h-52">
+        <div class="flex justify-between mx-auto w-11/12 p-4 h-20 max-sm:flex-col max-sm:gap-10 ">
+          <button class="bg-btn-blog w-20 rounded-md items-center max-sm:py-3">Blog</button>
           <div class="flex h-8 gap-2">
             <img src="./assets/logo.png" alt="" />Donate Bangladesh
           </div>
@@ -60,7 +60,7 @@
       </nav>
 
       <div class="flex justify-center mt-8 gap-6">
-        <button class="bg-btn-blog p-3 rounded-md font-semibold">
+        <button id="open-donate-section" class="bg-btn-blog p-3 rounded-md font-semibold btn">
           Donation
         </button>
         <button class="p-3 border rounded-md">History</button>
@@ -68,10 +68,11 @@
     </header>
     <!-- main start -->
     <main>
-        <!-- noakhaki -->
-      <div class=" flex w-11/12 mx-auto mt-10 gap-10 border h-[400px]">
-        <div class="p-6 h-[250px]"><img class="h-[350px]" src="./assets/noakhali.png" alt=""></div>
-        <div class="pt-6">
+      <div id="show-donate-section" class="max-sm:h-[2950px]">
+     <!-- noakhaki -->
+      <div class=" flex w-11/12 mx-auto mt-10 gap-3 border rounded-md h-[400px] max-sm:flex-col max-sm:h-[880px]">
+        <div class="p-6 h-[250px] max-sm:mb-20"><img class="h-[350px] max-sm:h-72" src="./assets/noakhali.png" alt=""></div>
+        <div class="pt-6 max-sm:p-5">
           <div class="flex h-8 gap-2">
             <img class="h-6" src="./assets/coin.png" alt="" />
             <button class="h-6"> 0</button>
@@ -85,15 +86,15 @@
       </div>
 
       <!-- feni -->
-      <div class=" flex w-11/12 mx-auto mt-10 gap-10 border h-[420px]">
-        <div class="p-6"><img class="h-[350px] w-[470px]" src="./assets/feni.png" alt=""></div>
-        <div class="pt-6 w-1/2">
+      <div class=" flex w-11/12 mx-auto mt-10 gap-3 border rounded-md h-[420px] max-sm:flex-col max-sm:h-[970px]">
+        <div class="p-6"><img class="h-[350px] w-[470px] max-sm:h-72" src="./assets/feni.png" alt=""></div>
+        <div class="pt-6 w-1/2 max-sm:w-full max-sm:p-5">
           <div class="flex h-8 gap-2">
             <img class="h-6" src="./assets/coin.png" alt="" />
             <button class="h-6">600</button>
             <p>BDT</p>
           </div>
-          <h2 class="font-bold text-xl my-4">Donate for Flood Relief in Feni,Bangladesh</h2>
+          <h2 class="font-bold text-xl my-4 max-sm:w-full">Donate for Flood Relief in Feni,Bangladesh</h2>
           <p>The recent floods in Feni have devastated local communities, leading to severe disruption and loss. Your generous donation will help provide immediate aid, including food, clean water, and medical supplies, to those affected by this calamity. Together, we can offer crucial support and help rebuild lives in the aftermath of this disaster. Every contribution counts towards making a real difference. Please consider donating today to assist those in urgent need.</p>
           <div class="mt-4"><input type="text" placeholder="Write Donation Amount" class="input input-bordered w-full"/></div> 
           <button class="bg-btn-blog mt-4 btn btn-wide w-full">Donate Now</button>
@@ -101,9 +102,9 @@
       </div>
 
       <!-- protest -->
-      <div class=" flex w-11/12 mx-auto mt-10 gap-10 border h-[430px]">
-        <div class="p-6"><img class="h-[350px] w-[470px]" src="./assets/quota-protest.png" alt=""></div>
-        <div class="pt-6 w-1/2">
+      <div class=" flex w-11/12 mx-auto mt-10 gap-3 border rounded-md h-[430px] max-sm:flex-col max-sm:h-[1000px]">
+        <div class="p-6"><img class="h-[350px] w-[470px] max-sm:h-72" src="./assets/quota-protest.png" alt=""></div>
+        <div class="pt-6 w-1/2 max-sm:w-full max-sm:p-5">
           <div class="flex h-8 gap-2">
             <img class="h-6" src="./assets/coin.png" alt="" />
             <button class="h-6">2400</button>
@@ -113,11 +114,15 @@
           <p>The recent Quota movement has resulted in numerous injuries and significant hardship for many individuals. Your support is crucial in providing medical assistance, rehabilitation, and necessary supplies to those affected. By contributing, you help ensure that injured individuals receive the care and support they need during this challenging time. Every donation plays a vital role in alleviating their suffering and aiding in their recovery. Please consider making a donation to support these brave individuals in their time of need.</p>
           <div class="mt-4"><input type="text" placeholder="Write Donation Amount" class="input input-bordered w-full"/></div> 
           <button class="bg-btn-blog mt-4 btn btn-wide w-full">Donate Now</button>
-          
-        </div>
-         
+        </div> 
+      </div>
+      </div>
+      <!-- For history -->
+      <div>
+
       </div>
     </main>
     <script src="./js/project.js"></script>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
