@@ -37,6 +37,8 @@ function updateFundBalance(inputId, fundId, balanceId) {
     let accountBalance = getBtnValueById(balanceId);
     let accountBalanceLeft = accountBalance - inputNumber;
     document.getElementById(balanceId).innerText = accountBalanceLeft;
+
+    
   }
   else {
     alert("invalid input number");
@@ -50,6 +52,7 @@ document.getElementById("noakhali-donate-btn").addEventListener('click', functio
     "noakhali-fund-number",
     "account-balance-number"
   );
+  document.getElementById("noakhali-input-number").value='';
 });
 
 document.getElementById("feni-donation-btn").addEventListener('click', function () {
@@ -58,6 +61,7 @@ document.getElementById("feni-donation-btn").addEventListener('click', function 
     "feni-fund-number",
     "account-balance-number"
   )
+  document.getElementById("feni-input-number").value = "";
 });
 
 document.getElementById("protest-donation-btn").addEventListener('click', function () {
@@ -66,4 +70,5 @@ document.getElementById("protest-donation-btn").addEventListener('click', functi
     "protest-fund-number",
     "account-balance-number"
   )
+  document.getElementById("protest-input-number").value = "";
 });
