@@ -44,16 +44,15 @@
     </script>
   </head>
   <body class="google-font">
-    <header class="fixed top-0 left-0 w-full max-sm:mb-80">
+    <header class="fixed top-0 left-0 w-full max-sm:mb-80 bg-white/50 backdrop-blur-lg z-50">
       <nav class="bg-nav-bg max-sm:h-48">
-        <div
-          class="flex justify-between mx-auto w-11/12 p-4 h-20 max-sm:flex-col max-sm:gap-7"
-        >
-          <button class="bg-btn-blog w-20 rounded-md items-center max-sm:py-3">
+        <div class="flex justify-between mx-auto w-11/12 p-4 h-20 max-sm:flex-col max-sm:gap-7">
+          <button id="blog-btn-inside-main" class="bg-btn-blog btn w-20 rounded-md items-center max-sm:py-3">
             Blog
           </button>
           <div class="flex h-8 gap-2">
-            <img src="./assets/logo.png" alt="" />Donate Bangladesh
+            <img src="./assets/logo.png" alt=""/>
+            <p>Donate Bangladesh</p>
           </div>
           <div class="flex h-8 gap-2">
             <img class="h-6" src="./assets/coin.png" alt="" />
@@ -64,13 +63,10 @@
       </nav>
 
       <div class="flex justify-center mt-8 gap-6">
-        <button
-          id="open-donate-section"
-          class="bg-btn-blog p-3 rounded-md font-semibold btn"
-        >
+        <button id="open-donate-section" class="border p-3 btn rounded-md font-semibold">
           Donation
         </button>
-        <button id="open-history-section" class="p-3 border rounded-md">
+        <button id="open-history-section" class="p-3 border btn rounded-md font-semibold">
           History
         </button>
       </div>
@@ -79,17 +75,11 @@
     <main class="mt-44 max-sm:mt-[300px]">
       <div id="show-donate-section" class="max-sm:h-[2950px]">
         <!-- noakhaki -->
-        <div
-          class="flex w-11/12 mx-auto mt-10 gap-3 border rounded-md h-[400px] max-sm:flex-col max-sm:h-[880px]"
-        >
+        <div class="flex w-11/12 mx-auto mt-10 gap-3 border rounded-md h-[400px] max-sm:flex-col max-sm:h-[880px]">
           <div class="p-6 h-[250px] max-sm:mb-20">
-            <img
-              class="h-[350px] max-sm:h-72"
-              src="./assets/noakhali.png"
-              alt=""
-            />
+            <img class="h-[350px] max-sm:h-72" src="./assets/noakhali.png" alt=""/>
           </div>
-          <div class="pt-6 max-sm:p-5">
+          <div class="pt-6 w-1/2 max-sm:w-full max-sm:p-5">
             <div class="flex h-8 gap-2">
               <img class="h-6" src="./assets/coin.png" alt="" />
               <button id="noakhali-fund-number" class="h-6">0</button>
@@ -100,42 +90,33 @@
             </h2>
             <p>
               The recent floods in Noakhali have caused significant damage to
-              <br />
+              
               homes infrastructure. Your donation will help provide essential
-              <br />
+              
               supplies and to those affected by this disaster. Every
-              contribution, <br />
+              contribution, 
               big or small, makes difference. Please join us in supporting the
-              relief <br />efforts and making a positive impact on the lives of
+              relief efforts and making a positive impact on the lives of
               those in need.
             </p>
             <div class="mt-4">
-              <input
-                type="text"
+              <input type="text"
                 id="noakhali-input-number"
                 placeholder="Write Donation Amount"
-                class="input input-bordered w-full"
-              />
+                class="input input-bordered w-full" />
             </div>
-            <button
-              id="noakhali-donate-btn"
-              class="bg-btn-blog mt-4 btn btn-wide w-full"
-            >
+            <button id="noakhali-donate-btn"
+              class="bg-btn-blog mt-4 btn btn-wide w-full">
               Donate Now
             </button>
           </div>
         </div>
 
         <!-- feni -->
-        <div
-          class="flex w-11/12 mx-auto mt-10 gap-3 border rounded-md h-[420px] max-sm:flex-col max-sm:h-[970px]"
-        >
+        <div class="flex w-11/12 mx-auto mt-10 gap-3 border rounded-md h-[420px] max-sm:flex-col max-sm:h-[970px]" >
           <div class="p-6">
-            <img
-              class="h-[350px] w-[470px] max-sm:h-72"
-              src="./assets/feni.png"
-              alt=""
-            />
+            <img class="h-[350px] w-[470px] max-sm:h-72"
+              src="./assets/feni.png" alt=""/>
           </div>
           <div class="pt-6 w-1/2 max-sm:w-full max-sm:p-5">
             <div class="flex h-8 gap-2">
@@ -157,26 +138,18 @@
               urgent need.
             </p>
             <div class="mt-4">
-              <input
-                type="text"
-                id="feni-input-number"
+              <input type="text" id="feni-input-number"
                 placeholder="Write Donation Amount"
-                class="input input-bordered w-full"
-              />
+                class="input input-bordered w-full" />
             </div>
-            <button
-              id="feni-donation-btn"
-              class="bg-btn-blog mt-4 btn btn-wide w-full"
-            >
+            <button id="feni-donation-btn"class="bg-btn-blog mt-4 btn btn-wide w-full">
               Donate Now
             </button>
           </div>
         </div>
 
         <!-- protest -->
-        <div
-          class="flex w-11/12 mx-auto mt-10 gap-3 border rounded-md h-[430px] max-sm:flex-col max-sm:h-[1010px]"
-        >
+        <div class="flex w-11/12 mx-auto mt-10 gap-3 border rounded-md h-[430px] max-sm:flex-col max-sm:h-[1010px]">
           <div class="p-6">
             <img
               class="h-[350px] w-[470px] max-sm:h-72"
@@ -212,9 +185,7 @@
                 class="input input-bordered w-full"
               />
             </div>
-            <button
-              id="protest-donation-btn"
-              class="bg-btn-blog mt-4 btn btn-wide w-full" >
+            <button id="protest-donation-btn" class="bg-btn-blog mt-4 btn btn-wide w-full" >
               Donate Now
             </button>
           </div>
@@ -222,25 +193,25 @@
       </div>
 
       <!-- For history -->
-      <div id="show-history-section" class="hidden h-60 mx-auto w-10/12 mt-6"></div>
-
+      <div id="show-history-section"class="hidden h-60 mx-auto w-10/12 mt-6"></div>
 
       <!-- Open the modal using ID.showModal() method -->
       <dialog id="my-modal" class="modal">
         <div class="modal-box">
           <h1 class="text-2xl font-bold flex justify-center">Congrats!</h1>
-          <div class="flex justify-center mt-2"> <img src="./assets/coin.png" alt=""></div>
+          <div class="flex justify-center mt-2">
+            <img src="./assets/coin.png" alt="" />
+          </div>
           <p class="py-4 flex justify-center">You Have Donated For Humankind</p>
           <h3 class="flex justify-center font-semibold">Successfully</h3>
           <div class="modal-action flex justify-center">
             <form method="dialog">
-              <button class="btn ">Close Confirmation</button>
+              <button class="btn">Close Confirmation</button>
             </form>
           </div>
         </div>
       </dialog>
     </main>
     <script src="./js/project.js"></script>
-    <script src="./js/donat"></script>
   </body>
 </html>

@@ -1,14 +1,16 @@
-document
-  .getElementById("open-donate-section")
+document.getElementById("open-donate-section")
   .addEventListener("click", function () {
     document.getElementById("show-donate-section").classList.remove("hidden");
     document.getElementById("show-history-section").classList.add("hidden");
+    document.getElementById('open-donate-section').classList.add('bg-[#B4F461]')
+    document.getElementById("open-history-section").classList.remove("bg-[#B4F461]");
   });
-document
-  .getElementById("open-history-section")
+document.getElementById("open-history-section")
   .addEventListener("click", function () {
     document.getElementById("show-donate-section").classList.add("hidden");
     document.getElementById("show-history-section").classList.remove("hidden");
+    document.getElementById("open-donate-section").classList.remove("bg-[#B4F461]");
+    document.getElementById("open-history-section").classList.add("bg-[#B4F461]");
   });
 
 /* get btn value common function */
@@ -43,7 +45,7 @@ function updateFundBalance(inputId, fundId, balanceId) {
     
   }
   else {
-    alert("invalid input number");
+    alert("invalid Donation Amount");
   }
 }
 
@@ -65,7 +67,7 @@ document.getElementById("noakhali-donate-btn").addEventListener('click', functio
     div.classList.add("p-5");
 
     div.innerHTML = `
-    <p class="font-semibold text-xl mb-3">${donateMoney} Taka is Donated for Flood Relief in Noakhali,Bangladesh</p>
+    <p class="font-semibold text-xl mb-3">${donateMoney} Taka is Donated for Flood Relief at Noakhali,Bangladesh</p>
     <p>Date: ${Date()}</p>
   `;
    document.getElementById("show-history-section").appendChild(div);
@@ -124,3 +126,9 @@ document.getElementById("protest-donation-btn").addEventListener('click', functi
     document.getElementById("show-history-section").appendChild(div);
   }
 });
+
+/* went to blog section function */
+document.getElementById("blog-btn-inside-main").addEventListener('click', function () {
+  window.location.href="./blog.html"
+});
+

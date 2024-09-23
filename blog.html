@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment-five</title>
+    <!-- tailwind and DaisyUi link start-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- font awesome link start -->
+    <script
+      src="https://kit.fontawesome.com/a605e9e2d5.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Google font link start -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- text style -->
+    <style>
+      .google-font {
+        font-family: "Lexend", sans-serif;
+      }
+    </style>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              "nav-bg": "#f9f7f3",
+              "btn-blog": "#B4F461",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="google-font">
+    <header class="bg-nav-bg">
+      <div class="flex justify-between w-11/12 mx-auto max-sm:flex-col max-sm:gap-4 h-20 p-4 max-sm:h-48">
+       <div><button id="blog-btn" class="btn bg-btn-blog">Home</button></div>
+       <div class="flex h-8 gap-2">
+        <img src="./assets/logo.png" alt="" />
+        <p>Donate Bangladesh</p>
+       </div>
+      <div class="flex gap-2 h-8">
+        <img class="h-6" src="./assets/coin.png" alt="" />
+        <button id="account-balance-number" class="h-6">55000</button>
+        <p>BDT</p>
+      </div>
+    </div>
+    </header>
+    <main>
+      <div class="w-11/12 mx-auto mt-6">
+        <div class="flex h-8 gap-2 mb-3">
+          <h1 class="font-semibold text-2xl">Important FAQ</h1>
+          <i class="fa-regular fa-circle-question text-2xl"></i>
+        </div>
+
+        <div tabindex="0" class="collapse collapse-arrow border-base-300 bg-base-200 border">
+          <div class="collapse-title text-xl font-medium">
+              What is the dom object Model (DOM)?
+          </div>
+          <div class="collapse-content">
+             <p>The DOM is a tree structure representing HTML or XML documents.</p>
+          </div>
+        </div>
+        <div tabindex="0" class="collapse collapse-arrow border-base-300 bg-base-200 border">
+          <div class="collapse-title text-xl font-medium">
+              How do you select an element from the DOM?
+          </div>
+          <div class="collapse-content">
+             <p>Use `document.querySelector()` or `document.getElementById()` to select elements.</p>
+          </div>
+        </div>
+        <div tabindex="0" class="collapse collapse-arrow border-base-300 bg-base-200 border">
+          <div class="collapse-title text-xl font-medium">
+              what is the event delegation in the context of the DOM ,and why is it useful ?
+          </div>
+          <div class="collapse-content">
+             <p>Event delegation assigns events to parent elements, improving performance efficiency.</p>
+          </div>
+        </div>
+        <div tabindex="0" class="collapse collapse-arrow border-base-300 bg-base-200 border">
+          <div class="collapse-title text-xl font-medium">
+              How do you manipulate an element's attributes and styles using DOM?
+          </div>
+          <div class="collapse-content">
+             <p>Use `setAttribute()`, `getAttribute()`, or directly modify `style` property for manipulation.</p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="./js/blog.js"></script>
+  </body>
+</html>
