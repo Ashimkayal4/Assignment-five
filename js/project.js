@@ -14,13 +14,13 @@ document.getElementById("open-history-section")
     document.getElementById("open-history-section").classList.add("bg-[#B4F461]");
 });
 
-/* get btn value common function */
+/* get btn value common : 1 function */
 function getBtnValueById(id) {
   let btnValueNumber = parseFloat(document.getElementById(id).innerText);
   return btnValueNumber;
 }
 
-/* get input value by common function */
+/* get input value by common : 2 function */
 function getInputValueById(id) {
   let inputValueNumber = document.getElementById(id).value;
   return inputValueNumber;

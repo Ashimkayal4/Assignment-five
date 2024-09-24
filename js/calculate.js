@@ -93,7 +93,7 @@ document.getElementById("protest-donation-btn").addEventListener("click", functi
       div.classList.add("mb-5");
       div.classList.add("p-5");
       div.innerHTML = `
-      <p class="font-semibold text-xl mb-3">${inputNumber} Taka is Donated for Flood Relief at Aid for Injured in the Quota Movement,Bangladesh</p>
+      <p class="font-semibold text-xl mb-3">${inputNumber} Taka is Aid for Injured in the Quota Movement,Bangladesh</p>
       <p>Date: ${Date()}</p>
       `;
       document.getElementById("show-history-section").appendChild(div);
