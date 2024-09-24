@@ -7,7 +7,7 @@ document.getElementById("noakhali-donate-btn").addEventListener("click", functio
   let fundBtn = getBtnValueById("noakhali-fund-number");
     let inputValue = getInputValueById("noakhali-input-number");
     
-    if (inputValue > 0 && !isNaN(inputValue) && inputValue < accountBtn) {
+    if (inputValue > 0 && !isNaN(inputValue) && inputValue <= accountBtn) {
 
         let inputNumber = parseFloat(getInputValueById("noakhali-input-number"));
 
@@ -43,7 +43,7 @@ document.getElementById("feni-donation-btn").addEventListener("click", function 
     let fundBtn = getBtnValueById("feni-fund-number");
     let inputValue = getInputValueById("feni-input-number");
 
-    if (inputValue > 0 && !isNaN(inputValue) && inputValue < accountBtn) {
+    if (inputValue > 0 && !isNaN(inputValue) && inputValue <= accountBtn) {
       let inputNumber = parseFloat(getInputValueById("feni-input-number"));
 
       let fundTotal = inputNumber + fundBtn;
@@ -76,7 +76,7 @@ document.getElementById("protest-donation-btn").addEventListener("click", functi
     let fundBtn = getBtnValueById("protest-fund-number");
     let inputValue = getInputValueById("protest-input-number");
 
-    if (inputValue > 0 && !isNaN(inputValue) && inputValue < accountBtn) {
+    if (inputValue > 0 && !isNaN(inputValue) && inputValue <= accountBtn) {
       let inputNumber = parseFloat(getInputValueById("protest-input-number"));
 
       let fundTotal = inputNumber + fundBtn;
