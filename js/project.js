@@ -30,8 +30,9 @@ function getInputValueById(id) {
 function updateFundBalance(inputId, fundId, balanceId) {
 
   let inputNumber = getInputValueById(inputId);
+  let accountBalance = getBtnValueById(balanceId);
   
-  if (inputNumber > 0 && !isNaN(inputNumber)) {
+  if (inputNumber > 0 && !isNaN(inputNumber) && inputNumber < accountBalance) {
     let addNumber = parseFloat(getInputValueById(inputId));
     let currentFund = getBtnValueById(fundId);
     let total = currentFund + addNumber;
@@ -44,7 +45,7 @@ function updateFundBalance(inputId, fundId, balanceId) {
     let accountBalance = getBtnValueById(balanceId);
     let accountBalanceLeft = accountBalance - addNumber;
     document.getElementById(balanceId).innerText = accountBalanceLeft;
-    
+
   }
   else {
     alert("Invalid Donation Amount");
@@ -60,8 +61,9 @@ document.getElementById("noakhali-donate-btn").addEventListener('click', functio
   );
  
   let donateMoney = getInputValueById("noakhali-input-number");
+  let balanceMain1 = getBtnValueById("account-balance-number");
 
-  if (donateMoney > 0 && !isNaN(donateMoney)) {
+  if (donateMoney > 0 && !isNaN(donateMoney) && balanceMain1 > donateMoney) {
     let div = document.createElement("div");
     div.classList.add("border");
     div.classList.add("rounded-md");
@@ -86,10 +88,10 @@ document.getElementById("feni-donation-btn").addEventListener('click', function 
     "feni-fund-number",
     "account-balance-number"
   )
-
+  let balanceMain2 = getBtnValueById("account-balance-number");
   let DonateMoney = getInputValueById("feni-input-number");
 
-  if (DonateMoney > 0 && !isNaN(DonateMoney)) {
+  if (DonateMoney > 0 && !isNaN(DonateMoney) && balanceMain2 > DonateMoney) {
     let div = document.createElement('div');
     div.classList.add('border')
     div.classList.add('rounded-md')
@@ -114,7 +116,8 @@ document.getElementById("protest-donation-btn").addEventListener('click', functi
     "account-balance-number"
   )
   let donate = getInputValueById("protest-input-number");
-  if (donate > 0 && !isNaN(donate)) {
+  let balanceMain3 = getBtnValueById("account-balance-number");
+  if (donate > 0 && !isNaN(donate) && balanceMain3 > donate) {
     let div = document.createElement("div");
     div.classList.add("border");
     div.classList.add("rounded-md");
