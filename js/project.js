@@ -21,18 +21,20 @@ function getBtnValueById(id) {
 
 /* get input value by common function */
 function getInputValueById(id) {
-  let inputValueNumber = parseFloat(document.getElementById(id).value);
+  let inputValueNumber = document.getElementById(id).value;
   return inputValueNumber;
 }
 
-/* common function that works donation section*/
+/* common function that works every donation section*/
 
 function updateFundBalance(inputId, fundId, balanceId) {
-  let inputNumber = getInputValueById(inputId);
 
+  let inputNumber = getInputValueById(inputId);
+  
   if (inputNumber > 0 && !isNaN(inputNumber)) {
+    let addNumber = parseFloat(getInputValueById(inputId));
     let currentFund = getBtnValueById(fundId);
-    let total = currentFund + inputNumber;
+    let total = currentFund + addNumber;
     document.getElementById(fundId).innerText = total;
 
     /* modal show set up in common function */ 
@@ -40,12 +42,12 @@ function updateFundBalance(inputId, fundId, balanceId) {
 
     /* decrease main balance */
     let accountBalance = getBtnValueById(balanceId);
-    let accountBalanceLeft = accountBalance - inputNumber;
+    let accountBalanceLeft = accountBalance - addNumber;
     document.getElementById(balanceId).innerText = accountBalanceLeft;
     
   }
   else {
-    alert("invalid Donation Amount");
+    alert("Invalid Donation Amount");
   }
 }
 
