@@ -38,10 +38,10 @@
       };
     </script>
   </head>
-  <body class="google-font w-screen">
+  <body class="google-font">
     <header class="fixed top-0 left-0 w-full max-sm:mb-80 bg-white/50 backdrop-blur-lg z-50">
       <nav class="bg-nav-bg max-sm:h-48">
-        <div class="flex justify-between mx-auto w-11/12 p-4 h-20 max-sm:flex-col max-sm:gap-7">
+        <div class="flex justify-between w-11/12 mx-auto p-4 h-20 max-sm:flex-col max-sm:gap-7">
           <button id="blog-btn-inside-main" class="bg-btn-blog btn w-20 rounded-md items-center max-sm:py-3">
             Blog
           </button>
@@ -51,13 +51,13 @@
           </div>
           <div class="flex h-8 gap-2">
             <img class="h-6" src="./assets/coin.png" alt="" />
-            <button id="account-balance-number" class="h-6">5500</button>
+            <span id="account-balance-number" class="h-6">5500</span>
             <p>BDT</p>
           </div>
         </div>
       </nav>
 
-      <div class="flex justify-center mt-8 gap-6">
+      <div class=" w-11/12 mx-auto flex justify-center mt-8 gap-6">
         <button id="open-donate-section" class="border p-3 btn rounded-md font-semibold">
           Donation
         </button>
@@ -155,7 +155,7 @@
           <div class="pt-6 w-1/2 max-sm:w-full max-sm:p-5">
             <div class="flex h-8 gap-2">
               <img class="h-6" src="./assets/coin.png" alt="" />
-              <button id="protest-fund-number" class="h-6">2400</button>
+              <button id="protest-fund-number" class="h-6">200</button>
               <p>BDT</p>
             </div>
             <h2 class="font-bold text-xl my-4">
@@ -190,7 +190,7 @@
       <div id="show-history-section"class="hidden h-60 mx-auto w-10/12 mt-6"></div>
 
       <!-- Open the modal using ID.showModal() method By using daisyUI -->
-      <dialog id="my-modal" class="modal">
+      <dialog id="my-modal" class="modal w-11/12 mx-auto">
         <div class="modal-box">
           <h1 class="text-2xl font-bold flex justify-center">Congrats!</h1>
           <div class="flex justify-center mt-2">
@@ -207,5 +207,6 @@
       </dialog>
     </main>
     <script src="./js/project.js"></script>
+    <script src="./js/calculate.js"></script>
   </body>
 </html>
